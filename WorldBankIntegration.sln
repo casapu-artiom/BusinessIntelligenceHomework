@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "WorldBankIntegration", "WorldBankIntegration\WorldBankIntegration.dtproj", "{BC1B4D8E-DBCE-4E08-B8DF-131EF1749922}"
+EndProject
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "WorldBankAnalysis", "WorldBankAnalysis\WorldBankAnalysis.dwproj", "{1DA669A5-A818-4683-8D66-76C3FAA66806}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "WorldBankReports", "WorldBankReports\WorldBankReports.rptproj", "{1BF8AB85-CAA0-437B-8945-EE7D6C94DCF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Development|Default = Development|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC1B4D8E-DBCE-4E08-B8DF-131EF1749922}.Debug|Default.ActiveCfg = Development
+		{BC1B4D8E-DBCE-4E08-B8DF-131EF1749922}.Debug|Default.Build.0 = Development
+		{BC1B4D8E-DBCE-4E08-B8DF-131EF1749922}.DebugLocal|Default.ActiveCfg = Development
+		{BC1B4D8E-DBCE-4E08-B8DF-131EF1749922}.DebugLocal|Default.Build.0 = Development
+		{BC1B4D8E-DBCE-4E08-B8DF-131EF1749922}.Development|Default.ActiveCfg = Development
+		{BC1B4D8E-DBCE-4E08-B8DF-131EF1749922}.Development|Default.Build.0 = Development
+		{BC1B4D8E-DBCE-4E08-B8DF-131EF1749922}.Release|Default.ActiveCfg = Development
+		{BC1B4D8E-DBCE-4E08-B8DF-131EF1749922}.Release|Default.Build.0 = Development
+		{1DA669A5-A818-4683-8D66-76C3FAA66806}.Debug|Default.ActiveCfg = Development
+		{1DA669A5-A818-4683-8D66-76C3FAA66806}.Debug|Default.Build.0 = Development
+		{1DA669A5-A818-4683-8D66-76C3FAA66806}.Debug|Default.Deploy.0 = Development
+		{1DA669A5-A818-4683-8D66-76C3FAA66806}.DebugLocal|Default.ActiveCfg = Development
+		{1DA669A5-A818-4683-8D66-76C3FAA66806}.DebugLocal|Default.Build.0 = Development
+		{1DA669A5-A818-4683-8D66-76C3FAA66806}.DebugLocal|Default.Deploy.0 = Development
+		{1DA669A5-A818-4683-8D66-76C3FAA66806}.Development|Default.ActiveCfg = Development
+		{1DA669A5-A818-4683-8D66-76C3FAA66806}.Development|Default.Build.0 = Development
+		{1DA669A5-A818-4683-8D66-76C3FAA66806}.Development|Default.Deploy.0 = Development
+		{1DA669A5-A818-4683-8D66-76C3FAA66806}.Release|Default.ActiveCfg = Development
+		{1DA669A5-A818-4683-8D66-76C3FAA66806}.Release|Default.Build.0 = Development
+		{1DA669A5-A818-4683-8D66-76C3FAA66806}.Release|Default.Deploy.0 = Development
+		{1BF8AB85-CAA0-437B-8945-EE7D6C94DCF1}.Debug|Default.ActiveCfg = Debug
+		{1BF8AB85-CAA0-437B-8945-EE7D6C94DCF1}.Debug|Default.Build.0 = DebugLocal
+		{1BF8AB85-CAA0-437B-8945-EE7D6C94DCF1}.Debug|Default.Deploy.0 = DebugLocal
+		{1BF8AB85-CAA0-437B-8945-EE7D6C94DCF1}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{1BF8AB85-CAA0-437B-8945-EE7D6C94DCF1}.DebugLocal|Default.Build.0 = DebugLocal
+		{1BF8AB85-CAA0-437B-8945-EE7D6C94DCF1}.Development|Default.ActiveCfg = DebugLocal
+		{1BF8AB85-CAA0-437B-8945-EE7D6C94DCF1}.Development|Default.Build.0 = DebugLocal
+		{1BF8AB85-CAA0-437B-8945-EE7D6C94DCF1}.Release|Default.ActiveCfg = Release
+		{1BF8AB85-CAA0-437B-8945-EE7D6C94DCF1}.Release|Default.Build.0 = Release
+		{1BF8AB85-CAA0-437B-8945-EE7D6C94DCF1}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
