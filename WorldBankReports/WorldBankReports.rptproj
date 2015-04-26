@@ -13,6 +13,14 @@
       <Name>TotalReserves.rdl</Name>
       <FullPath>TotalReserves.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>PopulationTotalAndTotalReserves.rdl</Name>
+      <FullPath>PopulationTotalAndTotalReserves.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>PrematureDeathsByRegion.rdl</Name>
+      <FullPath>PrematureDeathsByRegion.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
@@ -33,6 +41,7 @@
       <Options>
         <OutputPath>bin\DebugLocal</OutputPath>
         <TargetServerVersion>SSRS2008R2</TargetServerVersion>
+        <TargetServerURL>http://artiom-pc/Reports</TargetServerURL>
         <TargetFolder>WorldBankReports</TargetFolder>
         <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
         <TargetDatasetFolder>Datasets</TargetDatasetFolder>

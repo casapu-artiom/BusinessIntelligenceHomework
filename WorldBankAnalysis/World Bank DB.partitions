@@ -21,5 +21,45 @@
         </Partition>
       </Partitions>
     </MeasureGroup>
+    <MeasureGroup>
+      <ID>Premature Deaths Facts</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="e5712693-d083-44ae-a2cd-4b32b0367f59">
+          <ID>Premature Deaths Facts</ID>
+          <Name>Premature Deaths Facts</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="eb5ed771-cdd4-4109-a290-e878ebba04e5">
+            <DataSourceViewID>World Bank DB</DataSourceViewID>
+            <TableID>dbo_PrematureDeathsFacts</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Population Facts</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0ef6caf1-4740-4c1b-b3c1-541e3a6facff">
+          <ID>Population Facts</ID>
+          <Name>Population Facts</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="5e68456d-3546-4eca-9bb5-b7fec167aff2">
+            <DataSourceViewID>World Bank DB</DataSourceViewID>
+            <TableID>dbo_PopulationFacts</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
   </MeasureGroups>
 </Cube>

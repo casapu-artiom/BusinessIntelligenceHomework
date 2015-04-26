@@ -34,6 +34,22 @@
               </Partition>
             </Partitions>
           </MeasureGroup>
+          <MeasureGroup>
+            <ID>Premature Deaths Facts</ID>
+            <Partitions>
+              <Partition>
+                <ID>Premature Deaths Facts</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+          <MeasureGroup>
+            <ID>Population Facts</ID>
+            <Partitions>
+              <Partition>
+                <ID>Population Facts</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
         </MeasureGroups>
       </Cube>
     </Cubes>
