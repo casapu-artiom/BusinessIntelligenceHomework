@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="90"
-  DTS:VersionGUID="{0E7655D8-9096-4545-9F4F-01EF7532C080}">
+  DTS:VersionBuild="91"
+  DTS:VersionGUID="{6227BC4A-B860-4145-9123-30A4A2488CF7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -4184,12 +4184,11 @@ where [refTable].[CorrespondingYear] = ?</property>
                       externalMetadataColumnId="Package\Gasoline Facts\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CountryDimensionFK]"
                       lineageId="Package\Gasoline Facts\Unpivot.Outputs[Unpivot Output].Columns[CountryDimensionPK]" />
                     <inputColumn
-                      refId="Package\Gasoline Facts\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[MeasureValue]"
-                      cachedDataType="wstr"
-                      cachedLength="255"
-                      cachedName="MeasureValue"
-                      externalMetadataColumnId="Package\Gasoline Facts\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PopulationTotal]"
-                      lineageId="Package\Gasoline Facts\Unpivot.Outputs[Unpivot Output].Columns[MeasureValue]" />
+                      refId="Package\Gasoline Facts\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of MeasureValue]"
+                      cachedDataType="r4"
+                      cachedName="Copy of MeasureValue"
+                      externalMetadataColumnId="Package\Gasoline Facts\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Price]"
+                      lineageId="Package\Gasoline Facts\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of MeasureValue]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -4202,9 +4201,9 @@ where [refTable].[CorrespondingYear] = ?</property>
                       dataType="i4"
                       name="TimeIndicatorFK" />
                     <externalMetadataColumn
-                      refId="Package\Gasoline Facts\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PopulationTotal]"
+                      refId="Package\Gasoline Facts\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Price]"
                       dataType="r8"
-                      name="PopulationTotal" />
+                      name="Price" />
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -5507,14 +5506,14 @@ where [refTable].[CorrespondingYear] = ?</property>
               startId="Package\Gasoline Facts\Conditional Split.Outputs[Gasoline price]" />
             <path
               refId="Package\Gasoline Facts.Paths[Lookup Match Output1]"
-              endId="Package\Gasoline Facts\OLE DB Destination.Inputs[OLE DB Destination Input]"
-              name="Lookup Match Output"
-              startId="Package\Gasoline Facts\Lookup 1.Outputs[Lookup Match Output]" />
-            <path
-              refId="Package\Gasoline Facts.Paths[Lookup Match Output]"
               endId="Package\Gasoline Facts\Unpivot.Inputs[Unpivot Input]"
               name="Lookup Match Output"
               startId="Package\Gasoline Facts\Lookup.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\Gasoline Facts.Paths[Lookup Match Output]"
+              endId="Package\Gasoline Facts\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Lookup Match Output"
+              startId="Package\Gasoline Facts\Lookup 1.Outputs[Lookup Match Output]" />
             <path
               refId="Package\Gasoline Facts.Paths[Unpivot Output]"
               endId="Package\Gasoline Facts\Data Conversion.Inputs[Data Conversion Input]"
@@ -32253,10 +32252,6 @@ where [refTable].[CorrespondingYear] = ?</property>
           Id="Package\Gasoline Facts\Data Conversion"
           TopLeft="610,271" />
         <NodeLayout
-          Size="171,42"
-          Id="Package\Gasoline Facts\OLE DB Destination"
-          TopLeft="597,428" />
-        <NodeLayout
           Size="139,42"
           Id="Package\Gasoline Facts\Excel Source"
           TopLeft="87,47" />
@@ -32277,7 +32272,7 @@ where [refTable].[CorrespondingYear] = ?</property>
           Id="Package\Gasoline Facts\Lookup"
           TopLeft="598,140" />
         <EdgeLayout
-          Id="Package\Gasoline Facts.Paths[Lookup Match Output]"
+          Id="Package\Gasoline Facts.Paths[Lookup Match Output1]"
           TopLeft="711,163">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -32297,42 +32292,6 @@ where [refTable].[CorrespondingYear] = ?</property>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
               BoundingBox="-6.3100390625,5,114.120078125,16"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Gasoline Facts.Paths[Lookup Match Output1]"
-          TopLeft="905,342">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-222.5,86"
-              Start="0,0"
-              End="-222.5,78.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,39" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,39"
-                    Point2="0,43"
-                    Point3="-4,43" />
-                  <mssgle:LineSegment
-                    End="-218.5,43" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-218.5,43"
-                    Point2="-222.5,43"
-                    Point3="-222.5,47" />
-                  <mssgle:LineSegment
-                    End="-222.5,78.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-159.44138671875,48,96.3827734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -32464,22 +32423,49 @@ where [refTable].[CorrespondingYear] = ?</property>
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Gasoline Facts\OLE DB Destination"
+          TopLeft="670,430" />
+        <EdgeLayout
+          Id="Package\Gasoline Facts.Paths[Lookup Match Output]"
+          TopLeft="905,342">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-149.5,88"
+              Start="0,0"
+              End="-149.5,80.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,40" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,40"
+                    Point2="0,44"
+                    Point3="-4,44" />
+                  <mssgle:LineSegment
+                    End="-145.5,44" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-145.5,44"
+                    Point2="-149.5,44"
+                    Point3="-149.5,48" />
+                  <mssgle:LineSegment
+                    End="-149.5,80.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-122.94138671875,49,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Gasoline Facts\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Gasoline Facts\Excel Source">
     <Properties>
@@ -35824,6 +35810,19 @@ where [refTable].[CorrespondingYear] = ?</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Time Series Dimension\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Gasoline Facts\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

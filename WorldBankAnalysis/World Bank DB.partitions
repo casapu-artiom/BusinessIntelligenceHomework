@@ -61,5 +61,25 @@
         </Partition>
       </Partitions>
     </MeasureGroup>
+    <MeasureGroup>
+      <ID>Gasoline Facts</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="c11c05f6-dd63-4933-b5e4-7edfe10baf09">
+          <ID>Gasoline Facts</ID>
+          <Name>Gasoline Facts</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a6475380-0c14-46c7-bb32-f530addd119e">
+            <DataSourceViewID>World Bank DB</DataSourceViewID>
+            <TableID>dbo_GasolineFacts</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
   </MeasureGroups>
 </Cube>

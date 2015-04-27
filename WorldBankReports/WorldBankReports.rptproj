@@ -18,12 +18,28 @@
       <FullPath>PrematureDeathsByRegion.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>MatrixIndicesAndCountries.rdl</Name>
+      <FullPath>MatrixIndicesAndCountries.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>TotalReserves.rdl</Name>
       <FullPath>TotalReserves.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Report1.rdl</Name>
-      <FullPath>Report1.rdl</FullPath>
+      <Name>GasolinePriceByRegion.rdl</Name>
+      <FullPath>GasolinePriceByRegion.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>FemaleRate.rdl</Name>
+      <FullPath>FemaleRate.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>StocksTradedCorrelationWIthPrematureMortality.rdl</Name>
+      <FullPath>StocksTradedCorrelationWIthPrematureMortality.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>GasPriceByNonperformingCredits.rdl</Name>
+      <FullPath>GasPriceByNonperformingCredits.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
