@@ -10,16 +10,20 @@
   <DataSets />
   <Reports>
     <ProjectItem>
-      <Name>TotalReserves.rdl</Name>
-      <FullPath>TotalReserves.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>PopulationTotalAndTotalReserves.rdl</Name>
       <FullPath>PopulationTotalAndTotalReserves.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>PrematureDeathsByRegion.rdl</Name>
       <FullPath>PrematureDeathsByRegion.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TotalReserves.rdl</Name>
+      <FullPath>TotalReserves.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report1.rdl</Name>
+      <FullPath>Report1.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>

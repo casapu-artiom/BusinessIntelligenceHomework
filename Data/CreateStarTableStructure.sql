@@ -51,3 +51,11 @@ CREATE TABLE PopulationFacts (
 	CONSTRAINT fk_PopulationFacts_CountryDimension FOREIGN KEY (CountryDimensionFK) REFERENCES CountriesDimension(CountryDimensionPK) ON DELETE CASCADE,
 	CONSTRAINT fk_PopulationFacts_IndicatorDimension FOREIGN KEY ([TimeIndicatorFK]) REFERENCES TimeIndicator(TimeIndicatorPK) ON DELETE CASCADE,
 );
+
+CREATE TABLE GasolineFacts (
+	[CountryDimensionFK] [int] NOT NULL,
+	[TimeIndicatorFK] [int] NOT NULL,
+	[PopulationTotal] [float],
+	CONSTRAINT fk_GasolineFacts_CountryDimension FOREIGN KEY (CountryDimensionFK) REFERENCES CountriesDimension(CountryDimensionPK) ON DELETE CASCADE,
+	CONSTRAINT fk_GasolineFacts_IndicatorDimension FOREIGN KEY ([TimeIndicatorFK]) REFERENCES TimeIndicator(TimeIndicatorPK) ON DELETE CASCADE,
+);
